@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute([$user, $user]);
     $admin = $stmt->fetch();
 
-    if ($admin && password_verify($pass, $admin['password'])) {
+    if ($admin && (md5($pass) === $admin['password'] || password_verify($pass, $admin['password']))) {
         $_SESSION['admin_id']   = $admin['id'];
         $_SESSION['admin_user'] = $admin['username'];
         header('Location: index.php');
