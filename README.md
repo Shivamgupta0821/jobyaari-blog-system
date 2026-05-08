@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JobYaari - Blog Management System
 
 A full-featured blog management system built with PHP + MySQL + jQuery/AJAX.
@@ -89,3 +90,7 @@ blog-system/
 └── database/
     └── schema.sql      # Database setup
 ```
+=======
+# jobyaari-blog-system
+It is blog system made for jobyaari platform as part of internship selction process
+>>>>>>> f3889dbcec1ab43e26e357fe128ed6eedbbfdb12
