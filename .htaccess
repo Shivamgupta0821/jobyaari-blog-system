@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine On
+
+# Redirect root to public
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /public/index.php [L,R=301]
